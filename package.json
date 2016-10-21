@@ -1,0 +1,28 @@
+{
+  "name": "blog-namlun",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "accepts": "*",
+    "append-field": "*",
+    "array-flatten": "*",
+    "body-parser": "*",
+    "busboy": "*",
+    "bytes": "*",
+    "concat-stream": "*",
+    "content-disposition": "*",
+    "content-type": "*",
+    "cookie": "*",
+    "cookie-signature": "*",
+    "core-util-is": "*",
+    "debug": "*",
+    "depd": "*",
+    "destroy": "*",
+    "ejs": "*",
+    "express": "*",
+    "soundcloud": "^3.1.2"
+  }
+}

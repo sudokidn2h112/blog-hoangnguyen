@@ -27,7 +27,7 @@ var mang = [
   new VideoVimeo(11, "188236513_th.jpg", "188236513", "Really Love You - Noo Phước Thịnh", " Dịu dàng ngày em đến. Nồng nàn yêu thương. Xua tan cô đơn trong lòng anh..."),
   new VideoVimeo(12, "188116625_th.jpg", "188116625", "Mãi Mãi Bên Nhau - Noo Phước Thịnh", " Em là ai giữa cuộc đời này. Em từ đâu bước tới nơi đây..."),
   new VideoVimeo(13, "188274119_th.jpg", "188274119", "Once Again - Kim Na Young & Mad Clown", "  Descendants Of The Sun OST"),
-  new VideoVimeo(14, "188274119_th.jpg", "188274119", "Once Again - Kim Na Young & Mad Clown", "  Descendants Of The Sun OST"),
+  new VideoVimeo(14, "188596314_th.jpg", "188596314", "You Were Born To Be Loved", " Taengoo ah")
 ];
 
 function VideoVimeo(id, h, i, t, m){

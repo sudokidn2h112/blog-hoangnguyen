@@ -24,8 +24,10 @@ var mang = [
   new VideoVimeo(8, "188116375_th.jpg", "188116375", "You are my everything - Gumm", " Descendants Of The Sun OST"),
   new VideoVimeo(9, "188116374_th.jpg", "188116374", "This Love - Davichi", " Descendants Of The Sun OST"),
   new VideoVimeo(10, "188116373_th.jpg", "188116373", "I Do - 911 ", "My whole world changed from the moment I met you. And it would never be the same..."),
-  new VideoVimeo(11, "188236513_th.jpg", "188236513", "Really Love You - Noo Phước Thịnh", " Dịu dàng ngày em đến. Nồng nàn yêu thương. Xua tan cô đơn trong lòng anh...")
-
+  new VideoVimeo(11, "188236513_th.jpg", "188236513", "Really Love You - Noo Phước Thịnh", " Dịu dàng ngày em đến. Nồng nàn yêu thương. Xua tan cô đơn trong lòng anh..."),
+  new VideoVimeo(12, "188116625_th.jpg", "188116625", "Mãi Mãi Bên Nhau - Noo Phước Thịnh", " Em là ai giữa cuộc đời này. Em từ đâu bước tới nơi đây..."),
+  new VideoVimeo(13, "188274119_th.jpg", "188274119", "Once Again - Kim Na Young & Mad Clown", "  Descendants Of The Sun OST"),
+  new VideoVimeo(14, "188274119_th.jpg", "188274119", "Once Again - Kim Na Young & Mad Clown", "  Descendants Of The Sun OST"),
 ];
 
 function VideoVimeo(id, h, i, t, m){

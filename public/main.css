@@ -52,6 +52,9 @@ h1{
   text-align: center;
   padding: 5px
 }
+#error-signup .signup{
+  color: red
+}
 .name{
   color: red;
   font-weight: bold;

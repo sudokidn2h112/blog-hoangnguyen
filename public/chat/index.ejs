@@ -15,10 +15,14 @@
     <script>
       var socket = io();
         socket.on('server-send-error', function (data) {
-          alert("User " + data + " is availble!" )
+          alert("User " + data + " is availble!" );
+          var err_user = "<div>User " + data + " is availble!</div>";
+          $("#error-signup").html(err_user);
         });
         socket.on('server-send-success', function (data) {
-          var h = "<div socketid = '"+data.id+"' class="+data.username+" > &hearts;: " + data.username + "</div>";
+          var _id = data.id;
+          var _name = data.username;
+          var h = "<div socketid = '"+_id+"' class="+_name+" > &hearts;: " + _name + "</div>";
           $("#listUsersOnline").append(h);
         });
         socket.on('server-send-message', function (data) {
@@ -61,6 +65,10 @@
               $("#txtMessage").val("");
           }
         });
+
+        $("#closeChat").click(function () {
+            socket.disconnect();
+        });
         $(document).on("click", ".motUser", function () {
           var id = $(this).attr("socketid");
           socket.emit('client-to-client', id);
@@ -74,6 +82,7 @@
       <h1 class="caption">CHAT WITH ME <a class="closebutton" href="#!/" id="closeChat"></a></h1>
         <input type="text" id="txtUser" placeholder="Username" name="ten" class="form-control">
         <button type="button" id="btnDangki" class="btn btn-primary">Join now!!!</button>
+        <div id="error-signup"></div>
       <div class="block"></div>
       <div id="left">
         <div id="title">Users Online</div>

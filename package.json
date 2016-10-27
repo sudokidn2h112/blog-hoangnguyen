@@ -9,7 +9,8 @@
     "accepts": "*",
     "append-field": "*",
     "array-flatten": "*",
-    "body-parser": "*",
+    "base64id": "^0.1.0",
+    "body-parser": "^1.15.2",
     "busboy": "*",
     "bytes": "*",
     "concat-stream": "*",
@@ -21,8 +22,10 @@
     "debug": "*",
     "depd": "*",
     "destroy": "*",
-    "ejs": "*",
-    "express": "*",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "socket.io": "^1.5.1",
     "soundcloud": "^3.1.2"
   }
 }

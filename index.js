@@ -26,7 +26,13 @@ var mang = [
   new VideoVimeo(12, "188116625_th.jpg", "188116625", "Mãi Mãi Bên Nhau - Noo Phước Thịnh", " Em là ai giữa cuộc đời này. Em từ đâu bước tới nơi đây..."),
   new VideoVimeo(13, "188274119_th.jpg", "188274119", "Once Again - Kim Na Young & Mad Clown", "  Descendants Of The Sun OST"),
   new VideoVimeo(14, "188596314_th.jpg", "188596314", "You Were Born To Be Loved", " Taengoo ah"),
-  new VideoVimeo(15, "188776618_th.jpg", "188776618", "Mashup-12 bài hot", " Lynkee")
+  new VideoVimeo(15, "188776618_th.jpg", "188776618", "Mashup-12 bài hot", " Lynkee"),
+  new VideoVimeo(15, "189267563_th.jpg", "189267563", "Cause I Love You - Noo Phước Thịnh ", "Giờ người đang bước bên ai không phải anh. Giờ người đang bên ai kia không phải anh..."),
+  new VideoVimeo(15, "189267301_th.jpg", "189267301", "Thương - Karik ft Uyên Pím", "Lạ, yêu, hi sinh rồi thương. Tình cảm luôn dẫn dắt ta đến những cảm xúc vô thường"),
+  new VideoVimeo(15, "189267241_th.jpg", "189267241", "Đếm Ngày Xa Em - Only C ft. Lou Hoàng", "Nào đâu, chẳng được bấy lâu. Rồi phải xa cách nhau...."),
+  new VideoVimeo(15, "189267234_th.jpg", "189267234", "ERIK from ST.319 - Sau Tất Cả", "Sau tất cả, mình lại trở về với nhau. Tựa như chưa bắt đầu, tựa như ta vừa mới quen..."),
+  new VideoVimeo(15, "189267207_th.jpg", "189267207", "Yêu Một Người Có Lẽ - Lou Hoàng - Miu Lê ", "Giả vờ như tất cả mọi thứ chưa xảy ra với anh. Lập lờ những thứ ngay trước mắt anh chẳng hề so sánh..."),
+  new VideoVimeo(15, "189267206_th.jpg", "189267206", "Giá Như Anh Lặng Im - OnlyC ft. Lou Hoàng ft. Quang Hùng ", "Vì sao anh cứ đắm chìm lệ hoen cay khóe mi gió đông sang lạnh buốt con tim. Những ngọt ngào xưa nay cũng chỉ là kỉ niệm GIÁ NHƯ ANH LẶNG IM"),
 ];
 
 function VideoVimeo(id, h, i, t, m){

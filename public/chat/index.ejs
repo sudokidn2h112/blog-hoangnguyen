@@ -15,20 +15,19 @@
     <script>
       var socket = io();
         socket.on('server-send-error', function (data) {
-          alert("User " + data + " is availble!" );
-          var err_user = "<div>User " + data + " is availble!</div>";
+          var err_user = "<div class='err'>User " + data + " is availble!</div>";
           $("#error-signup").html(err_user);
         });
         socket.on('server-send-success', function (data) {
           var _id = data.id;
           var _name = data.username;
-          var h = "<div socketid = '"+_id+"' class="+_name+" > &hearts;: " + _name + "</div>";
+          var h = "<div style='color:red' socketid = '"+_id+"' class="+_name+" > &hearts;: " + _name + "</div>";
           $("#listUsersOnline").append(h);
         });
         socket.on('server-send-message', function (data) {
-          var name = "<span class='name'>" + data.username + ": </span>";
-          var mes = "<span class='mes'>" + data.msg + "</span>";
-          $("#listMessage").append(name + mes + "<div class='block'></div>");
+            var name = "<span class='name'>" + data.username + ": </span>";
+            var mes = "<span class='mes'>" + data.msg + "</span>";
+            $("#listMessage").append(name + mes + "<div class='block'></div>");
         });
         socket.on('server-send-client', function (data) {
           alert(data.username + " vua choc ban kia ^^!")
@@ -55,9 +54,12 @@
           }
         });
         $("#btnChat").click(function () {
-          var data = $("#txtMessage");
-          var data = $("#txtMessage").val();
-          if(data==""){
+          var msg = $("#txtMessage").val();
+          var name = $("#txtUser").val();
+          if(name==""){
+            alert("Please input username!")
+          }
+          else if(msg==""){
             alert("Please input message");
             document.getElementById("txtMessage").focus();
           }else {
@@ -93,6 +95,16 @@
         <div class="block"></div>
         <input class="form-control" type="text" id="txtMessage" placeholder="Message...">
         <button type="button" id="btnChat" class="btn btn-success">Send</button>
+        <div class="c1of2">
+        <h4 style="color:white">LIÊN HỆ</h4>
+        <div class="divider" style="height:13px" ></div>
+          <span text-align="left" style="color:yellow" font-size:"100px">Facebook Tự Động Trò Chuyện Rất Vui: <a href="https://www.facebook.com/ShevaKid-2063518220540294/?fref=ts" style="color:gray">CHAT BOT</a> <br>
+            Phương châm của mình: <br>
+              Điềm tĩnh trước gái xinh, không giật mình trước gái xấu <br>
+              Không được đầu gấu với gái ngoan, không cần﻿ nhẹ nhàng với gái giữ <br>
+              không tự tử nếu mất gái ngon, không ngậm bồ hòn ôm gái nát
+          </span>
+        </div>
       </div>
     </div>
   </body>
